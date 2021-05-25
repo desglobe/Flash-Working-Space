@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/fast.css">
+    <title>Flash | Co-Working Platform</title>
+</head>
+<body>
+    <!--Header Tab-->
+    <header class="top-cap">
+        <div class="logo">
+            <p>Flash</p>
+        </div>
+        <nav>
+            <div class="navigate glory" id="posiCoral">
+                <img src="./picture/battery-empty-solid.svg" onclick="hideMenu()" class="meuve" alt="close tag">
+                <ul class="top">
+                    <li><a href="#" class="sparkle active">about us?</a></li>
+                    <li><a href="#" class="sparkle">marketplace</a></li>
+                    <li><a href="#" class="sparkle">features</a></li>
+                    <li><a href="#" class="sparkle">vision</a></li>
+                    <li><a href="#" class="sparkle">contact</a></li>
+                </ul>
+            </div>
+            <img src="./picture/bars-solid.svg" onclick="showMenu()" class="meuve" alt="opening tag">
+        </nav>
+        <div class="enter">
+            <p>login</p>
+        </div>
+    </header>
+    <!--Main Content Tab-->
+    <section class="main-content">
+        <div class="pics">
+            <div class="cash">
+                <img src="./picture/werk.jpg" class="treams" alt="Product Feature">
+            </div>
+        </div>
+        <div class="context">
+            <div class="crop">
+                <h1 class="first">One-time subscription.</h1>
+                <h2 class="second">No discrimination.</h2>
+                <h3 class="third">The world's innovative workplace.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quis<br> culpa deleniti cum nulla, esse aspernatur fugit vero quisquam <br> corporis. Lorem ipsum dolor consectetur adipisicing elit.</p>
+            </div>
+            <div class="prom">
+                <button class="lapo">sign up for flash</button>
+            </div>
+            <div class="busy">
+                <a href="#" class="biz">Get Flash for your business</a>
+            </div>
+        </div>
+    </section>
+    <!--Footer Tab-->
+    <footer class="downsize">
+        <div class="cap">
+            <img src="./picture/envelope-square-solid.svg" class="pett" alt="logo">
+            <img src="./picture/facebook-square-brands.svg" class="pett" alt="logo">
+            <img src="./picture/instagram-square-brands.svg" class="pett" alt="logo">
+            <img src="./picture/linkedin-brands.svg" class="pett" alt="logo">
+            <img src="./picture/pinterest-square-brands.svg" class="pett" alt="logo">
+            <img src="./picture/twitter-square-brands.svg" class="pett" alt="logo">
+            <img src="./picture/snapchat-square-brands.svg" class="pett" alt="logo">
+            <img src="./picture/reddit-square-brands.svg" class="pett" alt="logo">
+        </div>
+    </footer>
+
+<!--JavaScript Toggle Menu-->
+
+    <script>
+        var posiCoral = document.getElementById("posiCoral");
+        function showMenu() {
+            posiCoral.style.right = "0";
+        }
+        function hideMenu() {
+            posiCoral.style.right = "-300px";
+        }
+    </script>
+</body>
+</html>

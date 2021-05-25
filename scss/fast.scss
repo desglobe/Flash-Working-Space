@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 100%;
+  width: 100%;
+  background: linear-gradient(
+      to top,
+      rgba(56, 201, 198, 0.8),
+      rgba(156, 98, 110, 0.9)
+    ),
+    url("/picture/lens-490806_1920.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+/*Header Tab*/
+
+.top-cap {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  min-height: 10vh;
+  align-items: center;
+}
+.logo p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.7em;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-left: 30px;
+}
+.logo,
+.navigate,
+.enter {
+  display: flex;
+}
+.logo {
+  flex: 1;
+}
+.navigate {
+  flex: 1;
+  justify-content: space-around;
+}
+.meuve {
+  width: 40px;
+  height: 30px;
+}
+.navigate ul {
+  display: flex;
+  list-style-type: none;
+  position: relative;
+}
+.navigate ul .sparkle {
+  text-decoration: none;
+  color: white;
+  text-transform: capitalize;
+  padding: 0.9em 1.1em;
+  font-size: 1.1em;
+  font-weight: 300;
+}
+li {
+  position: relative;
+}
+li::after {
+  content: "";
+  width: 0%;
+  height: 3px;
+  margin: auto;
+  background: rgba(56, 201, 198, 0.8);
+  display: block;
+  transition: 0.5s;
+}
+li:hover::after {
+  width: 100%;
+}
+.enter {
+  flex: 1;
+  justify-content: flex-end;
+}
+.enter p {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.1em;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-right: 3em;
+  background: #fff;
+  padding: 6px;
+  border-radius: 10px;
+  transition: 1s;
+}
+.enter p:hover {
+  background: coral;
+}
+
+/*Main Content Tab*/
+
+.main-content {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 40px;
+  gap: 50px;
+}
+.pics,
+.contex {
+  display: flex;
+}
+.pics {
+  flex-basis: 30%;
+}
+.contex {
+  flex-basis: 70%;
+}
+.cash {
+  display: flex;
+}
+.contex {
+  flex: 1;
+}
+.treams {
+  width: 100%;
+  min-height: 75vh;
+  border-radius: 50px 50px 40px;
+  padding-left: 5em;
+  z-index: 2;
+}
+.crop {
+  padding-top: 50px;
+}
+.first,
+.second,
+.third {
+  color: #fff;
+  font-size: 2.2em;
+  font-weight: 900;
+  line-height: 1.1em;
+  text-shadow: 0px 2px 8px coral;
+}
+.crop p {
+  padding-top: 1em;
+  font-size: 1em;
+}
+.prom {
+  margin-top: 20px;
+}
+.prom .lapo {
+  font-size: 0.9em;
+  text-transform: capitalize;
+  cursor: pointer;
+  background: black;
+  color: #fff;
+  border: 2px solid #fff;
+  width: 45%;
+  padding: 8px 0px;
+  transition: 0.5s;
+}
+.prom .lapo:hover {
+  background: coral;
+}
+.busy {
+  margin-top: 20px;
+}
+.busy .biz {
+  color: rgba(8, 4, 4, 0.705);
+  font-size: 0.9em;
+}
+
+/*Animation properties for both Logo & et al*/
+
+.logo p,
+.biz {
+  animation-name: jahel;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  // animation-iteration-count: infinite;
+}
+@keyframes jahel {
+  0% {
+    letter-spacing: -5px;
+    opacity: 0;
+    color: rgba(8, 4, 4, 0.705);
+  }
+  25% {
+    color: coral;
+  }
+  100% {
+    opacity: 1;
+    color: lime;
+  }
+}
+
+/*Footer Tab*/
+
+.downsize {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  background: #fff;
+  min-height: 11vh;
+  margin-top: -48px;
+  align-items: flex-end;
+  box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 0.1), rgba(0, 1, 0, 0.7);
+}
+.downsize .cap {
+  padding-left: 400px;
+}
+.pett {
+  width: 30px;
+  height: 20px;
+}
+
+/*Hide property when icons are at desktop size @1200px*/
+
+.meuve {
+  display: none;
+}
+
+/*Responsive design for device screen*/
+
+@media screen and (max-width: 480px) {
+  .navigate ul {
+    display: block;
+    padding-top: 20px;
+  }
+  .meuve {
+    display: block;
+  }
+  .glory {
+    position: absolute;
+    width: 280px;
+    min-height: 50vh;
+    right: -300px;
+    top: 0;
+    background: rgb(156, 98, 110);
+    text-align: left;
+    cursor: pointer;
+    z-index: 2;
+    transition: 0.2s;
+  }
+  li {
+    padding: 10px;
+  }
+  .main-content {
+    display: block;
+  }
+  .treams {
+    display: block;
+    margin: auto;
+    width: 100%;
+    min-height: 30vh;
+    padding-right: 4em;
+    z-index: -1;
+  }
+  .crop {
+    padding-top: 2px;
+    padding-left: 30px;
+  }
+  .first,
+  .second,
+  .third {
+    font-size: 2.2sem;
+    text-align: left;
+  }
+  .prom,
+  .busy {
+    text-align: center;
+  }
+  .downsize {
+    display: block;
+    margin-top: 48px;
+    min-height: 2vh;
+  }
+  .downsize .cap {
+    padding-left: 0px;
+    padding-top: 42px;
+    text-align: center;
+  }
+}
